@@ -37,7 +37,7 @@ public class TestFileSystem {
     public void writeStream() {
         try (FileSystem fs = getFs();
                 FSDataOutputStream outputStream = fs.create(new Path("/test/good.txt"));
-                OutputStreamWriter writer = new OutputStreamWriter(outputStream);) {
+                OutputStreamWriter writer = new OutputStreamWriter(outputStream)) {
             writer.write("good good");
         } catch (Exception e) {
 

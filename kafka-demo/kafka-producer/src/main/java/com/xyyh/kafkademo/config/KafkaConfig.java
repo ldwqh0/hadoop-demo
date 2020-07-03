@@ -1,17 +1,12 @@
-package com.xyyh.kafkademo;
+package com.xyyh.kafkademo.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.config.TopicBuilder;
 
-@SpringBootApplication
-public class KafkaDemoApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(KafkaDemoApplication.class, args);
-    }
+@EnableKafka
+public class KafkaConfig {
 
     @Bean
     public NewTopic testTopic() {
@@ -21,7 +16,4 @@ public class KafkaDemoApplication {
             .compact()
             .build();
     }
-
 }
-
-

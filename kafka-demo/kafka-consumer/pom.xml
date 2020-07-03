@@ -11,7 +11,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dm</groupId>
-  <artifactId>kafka-consumer2</artifactId>
+  <artifactId>kafka-consumer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
 
@@ -50,7 +50,6 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
-
   </build>
 
 </project>

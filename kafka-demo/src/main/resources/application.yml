@@ -1,7 +1,0 @@
-spring:
-  session:
-    store-type: redis
-  kafka:
-    bootstrap-servers: dm105:9092,dm106:9092,dm107:9092
-    consumer:
-      group-id: "group2"

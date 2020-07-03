@@ -15,12 +15,19 @@
   <packaging>pom</packaging>
 
   <properties>
-    <java.version>1.8</java.version>
+    <java.version>11</java.version>
     <scala.version>2.12.11</scala.version>
     <hadoop.version>3.2.1</hadoop.version>
     <hbase.version>2.2.5</hbase.version>
     <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
   </properties>
+
+  <modules>
+    <module>hdfs-demo</module>
+    <module>hbase-demo</module>
+    <module>hbase-spring-data-demo</module>
+    <module>spark-demo</module>
+  </modules>
 
   <dependencyManagement>
     <dependencies>
@@ -63,11 +70,5 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <modules>
-    <module>hdfs-demo</module>
-    <module>hbase-demo</module>
-    <module>hbase-spring-data-demo</module>
-    <module>spark-demo</module>
-    <module>kafka-consumer2</module>
-  </modules>
+
 </project>

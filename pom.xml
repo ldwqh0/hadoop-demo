@@ -27,6 +27,7 @@
     <module>hbase-demo</module>
     <module>hbase-spring-data-demo</module>
     <module>spark-demo</module>
+    <module>kafka-demo</module>
   </modules>
 
   <dependencyManagement>

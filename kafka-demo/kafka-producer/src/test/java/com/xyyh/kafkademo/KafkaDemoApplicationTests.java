@@ -15,12 +15,8 @@ class KafkaDemoApplicationTests {
     private KafkaTemplate template;
 
     @Test
-    void contextLoads() {
-    }
-
-    @Test
     public void newMessage() {
-        System.out.println("complete at " + ZonedDateTime.now() + "");
+        System.out.println("start at " + ZonedDateTime.now() + "");
         for (int i = 0; i < 1000000; i++) {
             long now = System.currentTimeMillis();
             template.send("test", "adg" + now);

@@ -21,6 +21,14 @@ public class Message implements Persistable<Long> {
     @Column(name = "message_")
     private String message;
 
+    public Message() {
+
+    }
+
+    public Message(String message) {
+        this.message = message;
+    }
+
     @Override
     public boolean isNew() {
         return Objects.isNull(id);

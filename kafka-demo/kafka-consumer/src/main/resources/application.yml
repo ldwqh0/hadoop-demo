@@ -2,7 +2,7 @@ spring:
   kafka:
     bootstrap-servers: dm105:9092,dm106:9092,dm107:9092
     consumer:
-      group-id: "group3"
+      group-id: "message-group"
     listener:
       type: batch
       concurrency: 16

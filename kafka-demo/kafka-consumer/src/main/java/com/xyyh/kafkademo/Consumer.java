@@ -18,12 +18,8 @@ public class Consumer {
     @KafkaListener(topics = {"test"})
     @Transactional
     public void test(List<String> messages) {
-        List<Message> msgs = messages.stream().map(message -> {
-            Message msg = new Message();
-            msg.setMessage(message);
-            return msg;
-        }).collect(Collectors.toList());
-        repository.saveAll(msgs);
+        List<Message> result = messages.stream().map(Message::new).collect(Collectors.toList());
+        repository.saveAll(result);
         System.out.println("save message [" + messages.size() + "] 条 at" + ZonedDateTime.now().toString());
     }
 }

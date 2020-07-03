@@ -1,0 +1,17 @@
+spring:
+  kafka:
+    bootstrap-servers: dm105:9092,dm106:9092,dm107:9092
+    consumer:
+      group-id: "group3"
+    listener:
+      type: batch
+      concurrency: 16
+  datasource:
+    driver-class-name:
+    url: 'jdbc:mysql://10.10.1.100/testMessage?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai'
+    username: 'root'
+    password: 'Abc.123456'
+  jpa:
+    database-platform: 'org.hibernate.dialect.MySQL8Dialect'
+    generate-ddl: true
+    show-sql: false

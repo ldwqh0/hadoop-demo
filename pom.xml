@@ -17,7 +17,7 @@
   <properties>
     <java.version>11</java.version>
     <scala.version>2.12.11</scala.version>
-    <hadoop.version>3.2.1</hadoop.version>
+    <hadoop.version>3.2.4</hadoop.version>
     <hbase.version>2.2.5</hbase.version>
     <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
   </properties>
